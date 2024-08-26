@@ -393,6 +393,10 @@ input[id="check"] {
   .container-img .discount {
     font-size: 0.5rem;
   }
+
+  .terms-conditions-label a {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 630px) {
