@@ -163,9 +163,9 @@ input[id="check"] {
   justify-content: center; */
 }
 
-/* SPECIALS */
+/* New Arrivals */
 
-.specials {
+.new-arrivals {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -181,10 +181,9 @@ input[id="check"] {
 
 .card-product {
   background-color: #fff;
-  /* padding: 1rem 1rem; */
-  border-radius: 0.5rem;
+  /* padding: 0.5rem; */
   cursor: pointer;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); */
 }
 
 .container-img {
@@ -208,19 +207,21 @@ input[id="check"] {
 }
 
 .content-card-product {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, min-content);
-  row-gap: 1rem;
+   row-gap: 1rem; */
   padding: 1rem;
 }
 
 .content-card-product h3 {
-  grid-row: 1/4;
-  grid-column: 1/4;
-  font-weight: 400;
-  font-size: 1.6rem;
+  /* grid-row: 1/4;
+  grid-column: 1/4; */
+  font-weight: 500;
+  font-size: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -232,15 +233,17 @@ input[id="check"] {
 .content-card-product .price {
   /* justify-self: end;
   align-self: center; */
-  grid-row: 4/4;
-  grid-column: 1/4;
-  font-size: 1.5rem;
+  /* grid-row: 4/4;
+  grid-column: 1/4; */
+  display: inline;
+  white-space: nowrap;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--price-sales);
 }
 
 .content-card-product .price span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: line-through;
   color: #777;
@@ -363,7 +366,7 @@ input[id="check"] {
 }
 
 @media screen and (max-width: 320px) {
-  .specials {
+  .new-arrivals {
     padding: 1rem 0;
     gap: 1rem;
   }
@@ -371,12 +374,6 @@ input[id="check"] {
     gap: 0.5rem;
     padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .content-card-product {
-    justify-items: center;
-    row-gap: 1rem;
-    padding: 1rem;
   }
 
   .container-img .discount {
@@ -527,11 +524,11 @@ input[id="check"] {
     font-size: 1rem;
   }
 
-  .content-card-product h3 {
+  /* .content-card-product h3 {
     font-size: 1rem;
-  }
+  } 
 
-  .content-card-product .price {
+  /* .content-card-product .price {
     font-size: 1rem;
     grid-row: 3/4;
     grid-column: 1/4;
@@ -539,7 +536,7 @@ input[id="check"] {
 
   .content-card-product .price span {
     font-size: 1rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) {
