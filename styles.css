@@ -150,17 +150,32 @@ input[id="check"] {
 
 /* BANNER */
 
-.banner {
+/* .banner {
   display: flex;
-  background-image: url("img/banner.jpeg");
-  /* linear-gradient(100deg, #000000, #00000020), */
+  background-image: url("img/logo_bezwingen.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 80vh;
   overflow: hidden;
-  /* align-items: center;
-  justify-content: center; */
+ 
+}*/
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Alto: 80% del alto visible */
+  background: url("img/logo_bezwingen.png") center/cover no-repeat;
+  background-size: contain;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-banner {
+  color: black;
+  text-align: center;
+  z-index: 2;
 }
 
 /* New Arrivals */
