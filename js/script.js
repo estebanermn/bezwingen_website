@@ -24,6 +24,13 @@ showSlide(index);
 // Inicializar posición
 showSlide(0);
 
+const menuToggle = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 /* ----- Carrusel horizontal de productos ----- */
 const prodContainer = document.querySelector(".productos-container");
 const prodNext = document.querySelector(".prod-next");
