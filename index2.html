@@ -1,110 +1,129 @@
 <!DOCTYPE html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BEZWINGEN</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style2.css" />
   </head>
   <body>
-    <header>
-      <input type="checkbox" id="check" />
-      <nav>
-        <div class="icon">BEZWINGEN</div>
-        <ol>
-          <li><a href="#">Ropa</a></li>
-          <li><a href="#">Accesorios</a></li>
-          <li><a href="#">Sale</a></li>
-        </ol>
-
-        <form class="search_box">
-          <input type="search" placeholder="Search here" />
-          <a href="#" title="Iniciar Sesion" class="a_login">
-            <span class="fa-regular fa-user icon icon-login"></span>
-          </a>
-          <a href="#" title="Mi carrito" class="a_cart">
-            <span class="fa-solid fa-cart-shopping icon icon-cart"></span>
-          </a>
-        </form>
-
-        <div class="bar_icons_group">
-          <a href="#" title="Iniciar Sesion" class="a_login_">
-            <span class="fa-regular fa-user icon icon-login"></span>
-          </a>
-          <a href="#" title="Mi carrito" class="a_cart_">
-            <span class="fa-solid fa-cart-shopping icon icon-cart"></span>
-          </a>
-        </div>
-        <label for="check" class="bar">
-          <span class="fa fa-bars" id="bars"></span>
-          <span class="fa fa-times" id="times"></span>
-        </label>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">BEZWINGEN</div>
+      <nav class="nav">
+        <a href="#">Inicio</a>
+        <a href="#">Ropa</a>
+        <a href="#">Sale</a>
+        <a href="#">Contacto</a>
       </nav>
     </header>
 
-    <section class="banner">
-      <div class="content-banner">
-        <!-- <p>Aqui va una promo</p>
-        <h2>100% descuento <br /> POLOS</h2>
-        <a href="#">Comprar ahora</a> -->
+    <!-- CARRUSEL -->
+    <section class="carousel">
+      <div class="slides">
+        <div class="slide active">
+          <img src="img/logo_bezwingen.png" alt="Banner 1" />
+        </div>
+
+        <div class="slide">
+          <img src="img/polo1.jpeg" alt="Banner 2" />
+        </div>
+
+        <div class="slide">
+          <img src="img/banner2.jpeg" alt="Banner 3" />
+        </div>
+
+        <div class="slide">
+          <img src="img/banner4.jpeg" alt="Banner 4" />
+          <div class="banner-text">
+            <h2>Overcome Every Challenge</h2>
+          </div>
+        </div>
       </div>
+
+      <!-- Botones -->
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
     </section>
 
-    <section class="container new-arrivals">
-      <h1 class="heading-1">Novedades</h1>
+    <!-- SECCIÓN RECOMENDADOS -->
 
-      <div class="container-products">
-        <!-- Producto 1 -->
-        <div class="card-product">
-          <div class="container-img">
-            <img src="img/A4_Mockup_37.png" alt="GUNS N ROSES Polo Negro" />
-            <span class="discount">-13%</span>
-          </div>
-          <div class="content-card-product">
-            <h3>GUNS N ROSES Polo Negro</h3>
-            <p class="price">S/50.70 <span>S/60.30</span></p>
-          </div>
-        </div>
-        <!-- Producto 2 -->
-        <div class="card-product">
-          <div class="container-img">
-            <img src="img/A4_Mockup_28.png" alt="Polo Negro SLASH" />
-            <span class="discount">-22%</span>
-          </div>
-          <div class="content-card-product">
-            <h3>Polo Negro SLASH</h3>
-            <p class="price">S/50.70 <span>S/60.30</span></p>
-          </div>
-        </div>
-
-        <div class="card-product">
-          <div class="container-img">
-            <img src="img/A4_Mockup_11.png" alt="Polo negro" />
-            <span class="discount">-30%</span>
-          </div>
-          <div class="content-card-product">
-            <h3>Cafe Racer Polo Blanco</h3>
-            <p class="price">S/50.70 <span>S/60.30</span></p>
-          </div>
-        </div>
-        <div class="card-product">
-          <div class="container-img">
+    <section class="recomendados">
+      <h2>Recomendados</h2>
+      <div class="productos-carousel">
+        <button class="prod-prev">&#10094;</button>
+        <div class="productos-container">
+          <div class="producto">
+            <img
+              src="img/A4_Mockup_35.png"
+              class="img-front"
+              alt="Producto 1"
+            />
             <img
               src="img/waikiki_lima_suf.png"
-              alt="Waikiki lima surf Polo Blanco"
+              class="img-back"
+              alt="Producto 1 Hover"
             />
-            <span class="discount">-30%</span>
+            <h3>Polo Clásico</h3>
+            <p>S/. 89.90</p>
           </div>
-          <div class="content-card-product">
-            <h3>Waikiki lima surf Polo Blanco</h3>
-            <p class="price">S/50.70 <span>S/60.30</span></p>
+          <div class="producto">
+            <img
+              src="img/A4_Mockup_34.png"
+              class="img-front"
+              alt="Producto 2"
+            />
+            <img
+              src="img/A4_Mockup_11.png"
+              class="img-back"
+              alt="Producto 2 Hover"
+            />
+            <h3>Polo Logo</h3>
+            <p>S/. 79.90</p>
+          </div>
+          <div class="producto">
+            <img
+              src="img/A41_Mockup_1.jpg"
+              class="img-front"
+              alt="Producto 3"
+            />
+            <img
+              src="img/A4_Mockup_23.jpg"
+              class="img-back"
+              alt="Producto 3 Hover"
+            />
+            <h3>Polo Surf</h3>
+            <p>S/. 99.90</p>
+          </div>
+          <div class="producto">
+            <img
+              src="img/A4_Mockup_36.png"
+              class="img-front"
+              alt="Producto 4"
+            />
+            <img
+              src="img/A4_Mockup_37.png"
+              class="img-back"
+              alt="Producto 4 Hover"
+            />
+            <h3>Polo Minimal</h3>
+            <p>S/. 69.90</p>
           </div>
         </div>
+        <button class="prod-next">&#10095;</button>
       </div>
     </section>
+
+    <!-- BOTÓN WHATSAPP -->
+
+    <a
+      href="https://wa.me/519XXXXXXXX?text=Hola,%20quiero%20más%20información"
+      target="_blank"
+      class="whatsapp"
+    >
+      <img src="img/whatsapp.png" alt="WhatsApp" />
+    </a>
 
     <footer class="footer" id="footer">
       <div class="footer-container">
@@ -186,9 +205,11 @@
         </div> -->
       </div>
     </footer>
+
     <script
       src="https://kit.fontawesome.com/81581fb069.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
